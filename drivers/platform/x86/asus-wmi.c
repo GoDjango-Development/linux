@@ -1586,7 +1586,7 @@ static int asus_wmi_battery_add(struct power_supply *battery, struct acpi_batter
 	 * platforms retains it, therefore signal the threshold as unknown
 	 * until user explicitly sets it to a new value.
 	 */
-	charge_end_threshold = -1;
+	charge_end_threshold = 100;
 
 	return 0;
 }
